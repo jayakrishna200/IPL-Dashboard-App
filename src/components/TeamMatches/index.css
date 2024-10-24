@@ -1,51 +1,68 @@
-/* Write your CSS here */
-.team-matches-main-bg {
+.team-matches-container {
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
-  padding: 50px;
 }
-#RCB {
-  background-image: linear-gradient(to bottom, #d91c1f, #a4261d);
+
+.rcb {
+  background: linear-gradient(to top, #1e293b, #a4261d);
 }
-#KKR {
-  background-image: linear-gradient(to bottom, #4f5db0, #13418b);
+
+.kkr {
+  background: linear-gradient(to top, #1e293b, #5755a7);
 }
-#KXP {
-  background-image: linear-gradient(to bottom, #f26d22, #d91c1f);
+
+.kxp {
+  background: linear-gradient(to top, #1e293b, #d91c1f);
 }
-#CSK {
-  background-image: linear-gradient(to bottom, #f7db00, #f26d22);
+
+.csk {
+  background: linear-gradient(to top, #1e293b, #f7db00);
 }
-#RR {
-  background-image: linear-gradient(to bottom, #da237b, #a4261d);
+
+.rr {
+  background: linear-gradient(to top, #1e293b, #da237b);
 }
-#MI {
-  background-image: linear-gradient(to bottom, #13418b, #4f5db0);
+
+.mi {
+  background: linear-gradient(to top, #1e293b, #13418b);
 }
-#SH {
-  background-image: linear-gradient(to bottom, #d91c1f, #f26d22);
+
+.srh {
+  background: linear-gradient(to top, #1e293b, #f26d22);
 }
-#DC {
-  background-image: linear-gradient(to bottom, #5755a7, #4f5db0);
+
+.dc {
+  background: linear-gradient(to top, #1e293b, #4f5db0);
 }
-.team-banner-img {
+
+.responsive-container {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    margin-top: 96px;
+    max-width: 1110px;
+  }
+}
+
+.team-banner {
   width: 100%;
 }
-.latest-matches {
-  font-family: 'Bree Serif';
-  color: #ffffff;
-  font-size: 20px;
-}
-.recent-matches-container {
+
+.recent-matches-list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 0;
-  margin-left: 0;
-  list-style-type: none;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 24px;
 }
-@media all and (max-width: 767px) {
-}
-@media all and (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
+  .recent-matches-list {
+    margin-top: 32px;
+  }
 }

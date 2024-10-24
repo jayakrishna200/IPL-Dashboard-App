@@ -1,26 +1,27 @@
-/* Write your CSS here */
-.not-found-container {
+.not-found-route-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
-}
-.not-found {
-  font-size: 50px;
-  color: #ffffff;
-  font-family: 'Bree Serif';
+  min-height: 100vh;
 }
 
-@media all and (max-width: 767px) {
-  .not-found-container {
-    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+@media screen and (min-width: 768px) {
+  .not-found-route-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
   }
 }
 
-@media all and (min-width: 768px) {
-  .not-found-container {
-    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+.not-found-heading {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-heading {
+    font-size: 64px;
   }
 }
